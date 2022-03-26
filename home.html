@@ -1,0 +1,532 @@
+<html>
+<!-------------------  Header  ------------------->
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- <script src="jquery-3.6.0.slim.min.js"></script> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-------------------  Loading Page  ------------------->
+
+    <div id="progressbar"></div>
+    <div id="preloader">
+
+    </div>
+
+
+    <!-------------------  Navbar  ------------------->
+    <section id="header4">
+
+        <div class="header">
+            <div class="nav">
+                <a href="home.html"><img src="img/logo.png"></a>
+
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times nne" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html" class="activ">HOME</a></li>
+
+                        <li><a href="contact.html">CONTACT</a></li>
+
+                        <li><a href="hair.html">PORTFOLIO</a></li>
+                        <!-- Theme change button  -->
+                        <li> <input type="checkbox" class="checkbox" id="checkbox">
+                            <label for="checkbox" class="label">
+                                <i class="fa fa-moon-o"></i>
+                                <i class="fa fa-sun-o"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars nne" onclick="showMenu()"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------  Dark theme ------------------->
+
+    <script>
+        const checkbox =
+            document.getElementById('checkbox');
+        checkbox.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+            document.body.classList.toggle('white');
+        });
+    </script>
+
+
+
+    <!-------------------  slideshow  ------------------->
+
+    <div class="row2Wrap">
+
+        
+
+
+        <!-- <h3>Individual slide text</h3> -->
+
+        <!-- Slider 1 -->
+        <div class="slider" id="slider3">
+        <div style="background-image:url(img/slider2.jpg)">
+               
+                <!-- <span>
+                    <h2>I'm a title for Slide #1</h2>
+                </span> -->
+            </div>
+            <div style="background-image:url(img/slider1.jpg)">
+              
+                <!-- <span>
+                    <h2>I'm a title for Slide #2</h2>
+                </span> -->
+            </div>
+            <div style="background-image:url(img/slider1.jpg)">
+                <!-- <span>
+                    <h2>I'm a title for Slide #3</h2>
+                </span> -->
+            </div>
+            <!-- The Arrows -->
+            <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+                </svg></i>
+            <i class="right" class="arrows" style="z-index:2; position:absolute;">
+                <svg viewBox="0 0 100 100">
+                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                        transform="translate(100, 100) rotate(180) "></path>
+                </svg></i>
+            <!-- Title Bar -->
+            <!--     <span class="titleBar">
+            <h1>I am like a leaf in the wind.</h1> 
+            <p>Watch me soar!</p>
+        </span> -->
+        </div>
+
+    </div>
+
+    <!-- <section class="sl">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="st first">
+                    <img src="img/slider1.jpg" width="100%">
+                </div>
+                <div class="st second">
+                    <img src="img/slider2.jpg" width="100%">
+                </div>
+                <div class="st third">
+                    <img src="img/slider1.jpg" width="100%">
+                </div>
+                <div class="st fourth">
+                    <img src="img/slider2.jpg" width="100%">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                    <div class="a-b4"></div>
+
+                </div>
+            </div>
+            <div class="nav-m">
+                <label for="radio1" class="m-btn"></label>
+                <label for="radio2" class="m-btn"></label>
+                <label for="radio3" class="m-btn"></label>
+                <label for="radio4" class="m-btn"></label>
+
+
+            </div>
+        </div> -->
+
+
+
+
+
+
+    <!-- </section>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 2000);
+
+    </script>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="slideshow-container dark"> -->
+
+    <!------------ Full-width images with number and caption text --
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/slider1.jpg" style="width: 100%;">
+
+                <div class="text">Image One</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/slider2.jpg" style="width: 100%;">
+                <div class="text">Image Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/slider1.jpg" style="width: 100%;">
+                <div class="text">Image Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/slider2.jpg" style="width: 100%;">
+                <div class="text">Image Four</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="img/slider1.jpg" style="width: 100%;">
+                <div class="text">Image Five</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/slider2.jpg" style="width: 100%;">
+                <div class="text">Image Six</div>
+            </div>
+
+            ---------- Next and previous buttons ----
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        --------- The dots/circles ------
+        <div style="text-align:center;margin-top:-50px;position: relative;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+    </section>
+
+----------------  Section 2 Center ------------------->
+    <section id="abc" class="center dark">
+        <h1>Naturally beautiful makeup<br> for your special event.
+        </h1>
+        <a href="hair.html" class="btn"><span class="btn-lg">Meet the Artist</span></a>
+
+
+    </section>
+
+
+    <!-------------------  facilities ------------------->
+    <section class="facilities dark">
+
+
+        <div class="row">
+            <div class="facilities-col">
+                <i class="fa fa-heart"></i>
+                <h2>Bridal Makeup</h2>
+                <img src="img/p1.jpg">
+                <p class="white">Natalia's goal in weddings is to create a warm, naturally beautiful look using<br> a
+                    palette of colors, textures and pigments that complement her bride's<br> unique personality and
+                    complexion. With joy and serenity, she works to
+                    make <br> her brides look and feel absolutely radiant on their day.
+                </p>
+                <a href="hair.html" class="btn1"><span class="btn-lg">Meet the Artist</span></a>
+
+
+
+            </div>
+            <div class="facilities-col">
+                <i class="fa fa-camera ; c1"></i>
+                <h2>Beauty Makeup</h2>
+                <img src="img/p2.jpg">
+          
+                <p>Natalia's goal in weddings is to create a warm, naturally beautiful look using<br> a palette of
+                    colors, textures and pigments that complement her bride's unique <br>  personality and complexion.
+                    With joy and serenity, she works to make her brides  <br>look and feel absolutely radiant on their day.
+                </p>
+                <a href="hair.html" class="btn1"><span class="btn-lg">Meet the Artist</span></a>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!---------------------------   Contact   ----------------------->
+
+    <section class="cta dark">
+        <h1>Pre Booking Contact Me</h1>
+        <a href="contact.html" class="btn2"><span class="btn-lg">CONTACT US</span></a>
+
+
+    </section>
+
+    <!----------- Footer ------------->
+    <section class="footer dark">
+        <footer>
+            <div class="social-links">
+         <ul>
+            <a href="#"><li class="facebook"><i class="fa fa-facebook"></i></li></a>
+            <a href="#"><li class="twitter"><i class="fa fa-twitter"></i></li></a>
+            <a href="#"><li class="youtube"><i class="fa fa-youtube-play"></i></li>
+            </a>
+            <a href="#"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a>
+            <a href="#"><li class="instagram"><i class="fa fa-instagram"></i></li>
+            </a>
+         </ul>
+        </div>
+        <i class="fa fa-arrow-up bottomright" id="top" onclick="scrollToTop()"></i>
+        <p style="margin-top: 10px; font-size: 20px;text-align: center;">Made by <i class="fa fa-heart-o"></i> Piyush Singh </p>
+        </footer>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!------------ JavaScript for Toggle Menu ------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+     <!--------------- Slide Show --------------------------
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script> -->
+
+    <script src="../package/js/swiper.min.js"></script>
+
+
+
+   <!-- ---------------- Nav  ----------------> 
+
+
+    <script>
+        let nav = document.querySelector(".nav")
+
+        window.onscroll = () => {
+            if (window.scrollY >= 100) {
+                nav.classList.add("active")
+            } else {
+                nav.classList.remove("active")
+            }
+        };
+    </script>
+
+    <!------------------ Pre Loading Page ---------------->
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        });
+    </script>
+
+
+
+    <!------------------- Scroll bar ------------------->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop(),
+                dh = $(document).height(),
+                wh = $(window).height();
+            scrollPercent = (scroll / (dh - wh)) * 100;
+            $('#progressbar').css('height', scrollPercent + '%');
+        });
+    </script> -->
+
+    <!--------------------- Testing JS --------------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="sliderResponsive.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#slider1").sliderResponsive({
+                // Using default everything
+                // slidePause: 5000,
+                // fadeSpeed: 800,
+                // autoPlay: "on",
+                // showArrows: "off", 
+                // hideDots: "off", 
+                // hoverZoom: "on", 
+                // titleBarTop: "off"
+            });
+
+            $("#slider2").sliderResponsive({
+                fadeSpeed: 500,
+                autoPlay: "off",
+                showArrows: "on",
+                hideDots: "on"
+            });
+
+            $("#slider3").sliderResponsive({
+                hoverZoom: "on",
+                hideDots: "on",
+                 slidePause: 4000,
+                 autoPlay: "on",
+            });
+
+        }); 
+    </script>
+
+<!-- Sticky Navbar -->
+<!-- <script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("header4");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script> -->
+<!------------------ Scroll Top ------------------>
+<script>
+   function scrollToTop() {
+            window.scrollTo(0,0) * 5;
+        }
+</script>
+
+
+
+
+
+
+
+
+<!-------------- Javascript -------------->
+<!-- 
+
+<script>
+    function sum(name, ...args){
+    
+       console.log(arguments);
+    
+       document.write(`Hello ${name} : `);
+    
+       let sum = 0;
+    
+       for (let i in args){
+    
+          sum += args[i];
+       }
+       document.write(sum);
+    }
+    var arr =[10,20,30,50];
+    
+    sum("Yahoo Baba",...arr);
+    
+    
+    
+    
+    
+    
+    </script> -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
